@@ -742,9 +742,11 @@ textarea {
 /* Mobile Responsive for ≤600px */
 @media (max-width: 600px) {
     /* Home Section fills full screen */
+    
     .Elements a {
     display: none;
 }
+
 
 /* Hamburger & Close Icons */
 .Elements i#menu-btn {
@@ -799,16 +801,19 @@ textarea {
     0% { transform: translateY(-100%); opacity: 0; }
     100% { transform: translateY(0); opacity: 1; }
 }
-    .main {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 100vh !important; /* Full mobile screen height */
-        margin: 0 !important;
-        padding: 1rem;
-        gap: 1rem;
-    }
+ .main {
+    flex-direction: column;
+    justify-content: flex-start; /* push content closer to top */
+    align-items: center;
+    height: auto; /* let it shrink naturally */
+    padding: 1rem 1.5rem;
+    gap: 1rem;
+    margin-top: 0;
+}
 
+ #Home {
+        padding-top: 6rem; /* adjust to navbar height + some space */
+    }
     /* Remove any extra space between sections */
     #About {
         margin-top: 2rem !important;  /* small clean gap below home */
@@ -836,16 +841,15 @@ textarea {
         display: none;
     }
     .userimage img {
-        display: block;
-        width: 14rem;
-        height: auto;
-       margin: 8rem auto;
-        border-radius: 50%;
-border: 4px solid;
-        border-color: #0099FF; /* Blue border on focus */
-  box-shadow: 0 0 8px rgba(59, 130, 246, 0.4);
-        
-    }
+    display: block;
+    width: 10rem;   /* smaller size for mobile */
+    height: 10rem;  /* maintain square shape */
+    margin: 1rem auto; /* reduce vertical gap */
+    border-radius: 50%;
+    border: 4px solid #0099FF;
+    box-shadow: 0 0 8px rgba(59, 130, 246, 0.4);
+}
+    
 
     /* Left content adjustments */
     .left {
@@ -854,16 +858,18 @@ border: 4px solid;
         text-align: center;
     }
     .left h1 {
-        font-size: 2rem;
-        margin-bottom: 0.1rem;
-    }
-    .left h2 {
-        font-size: 1.6rem;
-    }
-    .left p {
-        font-size: 1rem;
-        margin: 0.1rem 0;
-    }
+    margin-top: 0.5rem; /* reduce extra top margin */
+    font-size: 2rem;
+}
+   .left h2 {
+    font-size: 1.4rem;
+    margin-top: 0.2rem;
+}
+
+.left p {
+    font-size: 0.95rem;
+    margin: 0.5rem 0 1rem 0;
+}
     .left button {
         width: 10rem;
         height: 3rem;
