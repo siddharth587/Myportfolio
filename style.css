@@ -21,30 +21,19 @@ body{
 }
 
 
-#About{
 
-}
-#Skills{
-
-}
-#Projects{
-
-}
-#Contact{
-
-}
 section {
-    padding-top: 100px; /* slightly more than navbar height for spacing */
+    padding-top: 100px; 
 }
 
-/* Navbar */
+
 .Navbar{
      position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     background-color: transparent;
-    backdrop-filter: blur(10px); /* optional slight transparency */
+    backdrop-filter: blur(10px); 
     z-index: 999;
     padding: 20px 10vw;
     display: flex;
@@ -78,7 +67,7 @@ section {
     color: #0099FF;
 }
 
-/* Main Section */
+
 .main{
     display: flex;
     justify-content: space-between;
@@ -121,7 +110,7 @@ section {
   display: inline-block;
   margin-top: 0.8rem;
   animation: 
-   typing 2s steps(13),
+   typing 3.5s steps(17) infinite alternate,
    cursor .4s step-end infinite alternate;
 }
 @keyframes cursor{
@@ -130,7 +119,7 @@ section {
 }
 @keyframes typing{
  from { width: 0; }
-  to { width: 13ch; }
+  to { width: 20ch; }
 }
 .left p{
     color: #B0B8C1;
@@ -166,8 +155,7 @@ section {
     
 }
 
-/* About Section */
-/* About Section */
+
 #About {
     width: 100vw;
     padding: 4rem 2rem;
@@ -185,7 +173,7 @@ section {
     color: #00BFFF;
 }
 
-/* Main Container */
+
 .main-cont {
     display: flex;
     justify-content: space-between;
@@ -193,7 +181,7 @@ section {
     flex-wrap: wrap;
 }
 
-/* Left Content: About Myself */
+
 .left-content h1 {
     color: #00BFFF;
     text-align: center;
@@ -219,7 +207,7 @@ section {
     box-shadow: 0 20px 40px rgba(0, 191, 255, 0.5);
 }
 
-/* Profile Image */
+
 .info-box1 img {
     border-radius: 50%;
     height: 12rem;
@@ -300,7 +288,7 @@ section {
 }
 
 
-/* Floating Animation for Cards */
+
 @keyframes floatCard {
     0% { transform: translateY(0); }
     50% { transform: translateY(-6px); }
@@ -339,7 +327,7 @@ section {
   color: #00bfff;
 }
 
-/* 🔹 Card Grid Layout */
+
 .upper,
 .Lower {
   display: flex;
@@ -349,7 +337,7 @@ section {
   padding: 1rem 0;
 }
 
-/* 🔹 Skill Card Design */
+
 .html,
 .css,
 .javascript,
@@ -370,10 +358,10 @@ section {
   transition: all 0.4s ease;
   box-shadow: 0 0 20px rgba(0, 191, 255, 0.2);
   position: relative;
-  overflow: hidden;
+  overflow: hidden; 
 }
 
-/* 🔹 Image Style */
+
 .html img,
 .css img,
 .javascript img,
@@ -387,7 +375,7 @@ section {
   transition: transform 0.4s ease;
 }
 
-/* 🔹 Hover Effects */
+
 .html:hover,
 .css:hover,
 .javascript:hover,
@@ -412,7 +400,7 @@ section {
   transform: scale(1.15);
 }
 
-/* 🔹 Optional Floating Animation */
+
 @keyframes float {
   0% {
     transform: translateY(0);
@@ -491,15 +479,15 @@ section {
 
 .pb1, .pb2, .pb3, .pb4 {
   width: 25rem;
-  min-height: 18rem;  /* use min-height instead of fixed height */
+  min-height: 18rem;  
   background-color: #001829;
   border-left: 4px solid #0099FF;
   border-bottom: 4px solid #0099FF;
   border-radius: 20px;
   box-shadow: 0 0 15px rgba(0, 153, 255, 0.15);
   transition: all 0.4s ease;
-  padding-bottom: 1.5rem; /* add padding for arrow space */
-  overflow: hidden; /* ensures content stays inside */
+  padding-bottom: 1.5rem; 
+  overflow: hidden;   
 }
 
 .pb1:hover, .pb2:hover, .pb3:hover, .pb4:hover {
