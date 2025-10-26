@@ -8,9 +8,30 @@ html {
     scroll-behavior: smooth;
 }
 body{
-    background: url(https://static.vecteezy.com/ti/gratis-vector/p1/20205370-abstract-zwart-grijs-cyber-meetkundig-dynamisch-met-blanco-ruimte-futuristische-ontwerp-modern-technologie-achtergrond-vector.jpg);
+    background-color: black;
     min-height: 100vh;
     font-family: Arial, sans-serif;
+}
+#Home{
+   position: relative;
+  background: url("home4.png") no-repeat center/cover;
+  height: 100vh;
+  color: white;
+  overflow: hidden;
+}
+
+
+#About{
+
+}
+#Skills{
+
+}
+#Projects{
+
+}
+#Contact{
+
 }
 section {
     padding-top: 100px; /* slightly more than navbar height for spacing */
@@ -75,6 +96,13 @@ section {
 }
 .left h1 span{
   color: #0099FF;
+  text-shadow: 0 0 50px #002aff;
+  animation: anime 1s infinite alternate;
+}
+@keyframes anime{
+  100%{
+    text-shadow: 0 0 50px #70c6ff;
+  }
 }
 
 
@@ -87,6 +115,7 @@ section {
   letter-spacing: 1px;
   border-right: 3px solid #0099FF;
   white-space: nowrap;
+  
   font-size: 2rem;
   overflow: hidden;
   display: inline-block;
@@ -211,7 +240,7 @@ section {
     font-size: 1.2rem;
     line-height: 1.6;
     text-align: center;
-    padding: 2rem 2rem 0 2rem;
+    padding: 1rem 2rem 0 2rem;
 }
 
 /* Right Content: Education */
